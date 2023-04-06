@@ -1,0 +1,101 @@
+
+*{
+   padding-bottom: 100px;
+}
+
+
+
+body {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(182,205,233,1) 95%);
+  }
+  
+  .form-box {
+    background-color: #fff;
+    opacity: 80%;
+    width: 500px;
+    height: 700px;
+    margin: 70px auto;
+    padding: 20px;
+    border-radius: 25px;
+  }
+
+  form {
+    display: inline-block;
+    width: 85%;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3367d6;
+  }
+  .anch{
+    position: absolute;
+    top: 190px;
+  }
+  .text{
+    position: absolute;
+    top: 220px;
+    width: 430px;
+  }
+  .place{
+    position: absolute;
+    top: 290px;
+  }
+  .text2{
+    position: absolute;
+    top: 320px;
+    width: 430px;
+  }
+  .network{
+    position: absolute;
+    top: 390px;
+  }
+  .text3{
+    position: absolute;
+    top: 420px;
+    width: 430px;
+  }
+  .button{
+    position: absolute;
+    top: 720px;
+  }
+  .signs{
+    position: absolute;
+    top: 490px;
+  }
+  .text4{
+    position: absolute;
+    top: 520px;
+    width: 430px;
+  }
+  .activities{
+    position: absolute;
+    top: 590px;
+  }
+  .text5{
+    position: absolute;
+    top: 620px;
+    width: 430px;
+  }
+  

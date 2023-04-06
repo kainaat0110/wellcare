@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>API Example</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <style>
+        body, #quote, #author {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .quoteContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 50px;
+        width: 80%;
+        border: 1px solid grey;
+        border-radius: 20px;
+    }
+    
+    #quote {
+        font-family: "Bradley Hand ITC";
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    #author {
+        margin-top: 10px;
+        font-family: "Bradley Hand ITC";
+        font-size: 35px;
+    }
+
+    </style>
+</head>
+  <body>
+      <div class="quoteContainer">
+        <div id="quote"></div>
+        <div id="author"></div>
+      </div>
+    <script> 
+        src="https://requirejs.org/docs/release/2.3.5/minified/require.js"
+        const request = require('request');
+const options = {
+  method: 'GET',
+  url: 'https://quotes15.p.rapidapi.com/quotes/random/',
+  headers: {
+    'X-RapidAPI-Key': '5ec58a8951msh6037fd61df3ce40p154017jsn35c800320e1b',
+    'X-RapidAPI-Host': 'quotes15.p.rapidapi.com',
+    useQueryString: true
+  }
+};
+
+request(options, function (error, response, body) {
+	if (error) throw new Error(error);
+
+	console.log(body);
+});
+
+    </script>
+  </body>
+</html>

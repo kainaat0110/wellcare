@@ -1,0 +1,43 @@
+<!DOCType>
+<html lang="en"><head>
+            
+    </head>
+    <body>
+        <link rel="shortcut icon" type="image/png" href="https://iplay.az/themes/youplay/img/icon.png"/> 
+        <link rel="stylesheet" href="https://iplay.az/themes/youplay/css/jquery-ui.min.css"> 
+        <link rel="stylesheet" href="https://iplay.az/themes/youplay/css/jquery.tagit.css"> 
+        <link rel="stylesheet" href="https://iplay.az/themes/youplay/css/font-awesome-4.7.0/css/font-awesome.min.css"> 
+        <link rel="stylesheet" href="https://iplay.az/themes/youplay/css/twemoji-awesome.css"> 
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"> 
+        <link rel="stylesheet" href="https://iplay.az/themes/youplay/css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="https://iplay.az/themes/youplay/js/lib/sweetalert2/dist/sweetalert2.min.css"> 
+        <link rel="stylesheet" href="https://iplay.az/themes/youplay/js/lib/notifIt/notifIt/css/notifIt.min.css">
+         <link rel="stylesheet" href="https://iplay.az/themes/youplay/css/style.css" id="style-css"> 
+         <link rel="stylesheet" href="https://iplay.az/themes/youplay/css/night-mode.css" class="night-mode-css"> 
+         <link rel="stylesheet" href="https://iplay.az/themes/youplay/css/custom.style.css"> 
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css"> 
+         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,500" rel="stylesheet"> 
+         <script src="https://iplay.az/themes/youplay/js/jquery-3.min.js"></script> <script src="https://iplay.az/themes/youplay/js/jquery-ui.min.js"></script> 
+         <script type="text/javascript" src="https://iplay.az/themes/youplay/js/jquery.form.min.js"></script> 
+         <script type="text/javascript" src="https://iplay.az/themes/youplay/js/tag-it.min.js"></script> 
+         <link rel="stylesheet" href="https://iplay.az/themes/youplay/player/css/mediaelementplayer.min.css" /> 
+         <script src="https://iplay.az/themes/youplay/player/js/mediaelement-and-player.min.js"></script> 
+         <link rel="stylesheet" href="https://iplay.az/themes/youplay/player/css/mejs-dark.css" /> 
+         <script src="https://iplay.az/themes/youplay/js/lib/sweetalert2/dist/sweetalert2.js"></script> 
+         <script src="https://iplay.az/themes/youplay/js/lib/notifIt/notifIt/js/notifIt.min.js"></script> 
+         <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet"> 
+         <script type="text/javascript" src="https://iplay.az/themes/youplay/js/bootstrap.min.js"></script> 
+         <link rel="stylesheet" href="https://iplay.az/themes/youplay/css/bootstrap-select.min.css"> 
+         <script src="https://iplay.az/themes/youplay/js/bootstrap-select.min.js"></script> 
+         <script src="https://iplay.az/themes/youplay/js/emoji/emojionearea/dist/emojionearea.js"></script> 
+         <link rel="stylesheet" type="text/css" href="https://iplay.az/themes/youplay/js/emoji/emojionearea/dist/emojionearea.min.css"/> 
+         <script src="https://iplay.az/themes/youplay/player/plugins/speed/speed.min.js"></script> 
+         <link rel="stylesheet" href="https://iplay.az/themes/youplay/player/plugins/speed/speed.min.css" /> 
+         <script src="https://iplay.az/themes/youplay/player/plugins/speed/speed-i18n.js"></script> 
+         <script src="https://iplay.az/themes/youplay/player/plugins/jump/jump-forward.min.js"></script> 
+         <link rel="stylesheet" href="https://iplay.az/themes/youplay/player/plugins/jump/jump-forward.min.css" /> 
+         <script src="https://iplay.az/themes/youplay/player/plugins/ads/ads.min.js"></script>
+          <link rel="stylesheet" href="https://iplay.az/themes/youplay/player/plugins/ads/ads.min.css" /> <script src="https://iplay.az/themes/youplay/player/plugins/ads/ads-i18n.js"></script> <script src="https://iplay.az/themes/youplay/player/plugins/vast/ads-vast-vpaid.js"></script> <script src="https://iplay.az/themes/youplay/player/plugins/quality/quality.min.js"></script> <link rel="stylesheet" href="https://iplay.az/themes/youplay/player/plugins/quality/quality.min.css" /> <script src="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/renderers/facebook.min.js"></script> <script src="https://iplay.az/themes/youplay/player/plugins/context-menu/context-menu.min.js"></script> <script src="https://iplay.az/themes/youplay/player/plugins/context-menu/context-menu-i18n.js"></script> <link rel="stylesheet" href="https://iplay.az/themes/youplay/player/plugins/context-menu/context-menu.min.css" /> <script src="https://iplay.az/themes/youplay/js/Fingerprintjs2/fingerprint2.js"></script> <!-- <script src="https://iplay.az/themes/youplay/js/highcharts/highcharts.js"></script> <script src="https://iplay.az/themes/youplay/js/highcharts/exporting.js"></script> --> <script src= "https://player.twitch.tv/js/embed/v1.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script> <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> 
+         <script> function RunLiveAgora(channelName,DIV_ID,token) { var agoraAppId = ''; var token = token; var client = AgoraRTC.createClient({mode: 'live', codec: 'vp8'}); client.init(agoraAppId, function () { client.setClientRole('audience', function() { }, function(e) { }); client.join(token, channelName, 0, function(uid) { }, function(err) { }); }, function (err) { }); client.on('stream-added', function (evt) { var stream = evt.stream; var streamId = stream.getId(); client.subscribe(stream, function (err) { }); }); client.on('stream-subscribed', function (evt) { var video_id = $('#video-id').val(); if (!video_id) { return false; } $('#'+DIV_ID).html('<div class="wow_liv_counter"><span id="live_word_'+video_id+'">Жить</span> <span id="live_count_'+video_id+'"> 0</span></div><div id="live_post_comments_'+video_id+'" class="wow_liv_comments_feed user-comments"></div>'); var remoteStream = evt.stream; remoteStream.play(DIV_ID); $('#player_'+remoteStream.getId()).find('video').css('position', 'relative'); }); } var site_url = 'https://iplay.az'; function PT_Ajax_Requests_File() { return site_url + '/'; } function PT_Page_Loading_File() { return site_url + '/page_loading.php'; } function OpenShareWindow(url, windowName) { newwindow = window.open(url, windowName, 'height=600,width=800'); if (window.focus) { newwindow.focus(); } return false; } function getCookie(name) { var value = "; " + document.cookie; var parts = value.split("; " + name + "="); if (parts.length == 2) return parts.pop().split(";").shift(); } </script> <script src="https://iplay.az/themes/youplay/js/header.js"></script> <script src="https://imasdk.googleapis.com/js/sdkloader/ima3.js" type="text/javascript"></script>
+    </body>

@@ -1,0 +1,32 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Daily Sales Input</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="sales-chart"></div>
+
+  <script src="https://cdn.plot.ly/plotly-latest.min.js">
+
+    var salesData = {{ sales_data|json_script }};
+    var salesDates = salesData.map(function(sale) { return sale.date; });
+    var salesAmounts = salesData.map(function(sale) { return sale.amount; });
+    var trace = {
+      x: salesDates,
+      y: salesAmounts,
+      type: 'line'
+    };
+    var data = [trace];
+    var layout = {
+      title: 'Daily Sales',
+      xaxis: { title: 'Date' },
+      yaxis: { title: 'Amount' }
+    };
+    Plotly.newPlot('sales-chart', data, layout);
+  </script>
+{% endblock %}

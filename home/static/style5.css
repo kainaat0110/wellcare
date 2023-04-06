@@ -6,17 +6,17 @@
     position: absolute;
         top: 200px;
         left: 100px;
-        padding-bottom: 193px;
-        padding-right: 200px;
+        padding-bottom: 195px;
+        padding-right: 215px;
        
         
         background-color: transparent;
         box-shadow: 2px 4px 8px 0 rgba(6, 47, 85, 0.2);
     
 }
-.card-img-top{
-   width: 100%;
-   height: 50%;
+.card-h-100{
+  height: fit-content;
+  width: fit-content;
 }
 
 .container{
@@ -69,14 +69,14 @@ nav ul li a{
     color: #023047;
 }
 .button1 {
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
     display: inline-block;
     text-align: center;
     font-weight: bold;
-    padding: 0.4em 2em;
-    border: 3px solid #FF0072;
+    padding: 0.7em 2em;
+    border: 2px solid #FF0072;
     border-radius: 22px;
     position: relative;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
@@ -84,6 +84,7 @@ nav ul li a{
     text-decoration: none;
     transition: 0.3s ease all;
     z-index: 1;
+    font-weight: 1000;
   }
   
   .button1:before {
@@ -97,6 +98,7 @@ nav ul li a{
     content: '';
     background-color: #FF0072;
     z-index: -1;
+    border-radius: 22px;
   }
   
   .button1:hover, button1:focus {
@@ -119,8 +121,8 @@ nav ul li a{
         top: 200px;
         left: 500px;
         padding-top: 130px;
-        padding-right: 200px; 
-        padding-bottom: 50px;  
+        padding-right: 210px; 
+        padding-bottom: 65px;  
         background-color: transparent;
         box-shadow: 2px 4px 8px 0 rgba(6, 47, 85, 0.2);
 
@@ -130,7 +132,7 @@ nav ul li a{
         top: 200px;
         left: 900px;
         padding-top: 130px;
-        padding-right: 210px; 
+        padding-right: 200px; 
         padding-bottom: 68px;  
         background-color: transparent;
         box-shadow: 2px 4px 8px 0 rgba(6, 47, 85, 0.2);
@@ -156,7 +158,7 @@ nav ul li a{
         top: 550px;
         left: 500px;
         padding-top: 130px;
-        padding-right: 212px; 
+        padding-right: 195px; 
         padding-bottom: 68px;  
         background-color: transparent;
         box-shadow: 2px 4px 8px 0 rgba(6, 47, 85, 0.2);
@@ -187,6 +189,9 @@ nav ul li a{
 }
 
 .input {
+  position: absolute;
+  top: 23px;
+  left: 520px;
   border-style: none;
   height: 50px;
   width: 50px;
@@ -197,28 +202,25 @@ nav ul li a{
   background-color: #4faed4;
   box-shadow: 0px 0px 3px #2b2929;
   padding-right: 40px;
-  color: #3f3939;
-  text-decoration-color: #023047;
-
+  color: #4e4646;
 }
 
 .input::placeholder,
 .input {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 17px;
-  font-display: #023047;
+
 }
 
 .input::placeholder {
-  color: #8f8f8f;
-  text-decoration-color: #023047;
+  color: #585252;
 
 }
 
 .icon {
   position: absolute;
-  top: 900px;
-  left: 50px;
+  top: 23px;
+  left: 520px;
   cursor: pointer;
   width: 50px;
   height: 50px;
@@ -226,7 +228,6 @@ nav ul li a{
   border-style: none;
   border-radius: 50%;
   pointer-events: painted;
-  
   transition: .2s linear;
   text-decoration-color: #023047;
 }
